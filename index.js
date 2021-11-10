@@ -122,13 +122,15 @@ Baby.prototype.play = function(){
   return `Playing with ${this.favoriteToy}`; 
 }
 
+
+
 /* 
   TASK 4
   In your own words explain the four principles for the "this" keyword below:
-  1. Window Binding     
-  2. Implicit Binding 
-  3. Explicit Binding 
-  4. New Binding 
+  1. Window Binding - means an error, when none of the other rules apply, .this defaults to the window. When in strict mode will return undefined. 
+  2. Implicit Binding - when a function is invoked, to the left of the dot is where implicit binding is refering too. This applies to objects with methods and used predominately. 
+  3. Explicit Binding - using .call, .apply, or .bind when we want to pass in what we want .this to refer to 
+  4. New Binding - when a function is invoked as a constructor function .this points to the new object created 
 */
 
 
